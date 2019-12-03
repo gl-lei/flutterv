@@ -88,7 +88,7 @@ if [ ! -r $flutter_command ]; then
     if [[ 0 == $? ]]; then
         echo "Flutter SDK 文件下载成功，解压中..."
         tar -zxf $sdk_zip_flie_name -C $flutter_download_sdk_dir || (echo "Flutter SDK 解压失败";exit -1)
-        # rm -rf $sdk_zip_flie_name
+        rm -rf $sdk_zip_flie_name
         cd "${flutter_download_sdk_dir}/flutter"
         git checkout .
         cd $cur_dir
