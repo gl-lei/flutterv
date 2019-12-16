@@ -6,7 +6,7 @@ export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 # 默认环境配置
 default_flutter_download_sdk_dir=`echo $HOME`
 default_flutter_platform="macos"
-default_flutter_version="1.12.3+hotfix.5"
+default_flutter_version="1.12.13+hotfix.5"
 default_flutter_channel="stable"
 default_need_reset_sdk="N"
 
