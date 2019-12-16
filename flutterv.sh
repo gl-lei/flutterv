@@ -112,7 +112,7 @@ upgradeSDKFunc() {
     echo "版本不一致, 当前版本为v${cur_flutter_version}, 切换版本为: v${flutter_version}"
     if [[ ${need_reset_sdk} == "Y" ]] || [[ ${need_reset_sdk} == "y" ]]; then
         echo "删除当前版本 SDK 库, 重新下载新版本"
-        rm -rf ${flutter_download_sdk_dir}
+        rm -rf ${flutter_download_sdk_dir}/flutter
         downloadSDKFunc
     else
         # 防止文件本地有修改
